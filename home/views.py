@@ -9,7 +9,20 @@ from .forms import ProjectCreateForm , ProjectUpdateForm
 
 class ProjectListView(ListView):
     model = Project
+    ordering = [ '-update_at' ]
     template_name = "index.html"
+    paginate_by = 6
+
+    def get_queryset(self):     # add search
+        query_set = super().get_queryset()
+        where = {}
+        q = self.request.GET.get('q' , None)
+        if q:
+            where['title__icontains'] = q
+        return query_set.filter(**where)
+
+
+    
 
 
 class ProjectCreateView(CreateView):
@@ -49,7 +62,6 @@ class TaskCreateView(CreateView):
 class TaskUpdateView(UpdateView):
     model = Task
     fields = [ 'is_completed' ]
-    http_method_names = ['post']
 
     def get_success_url(self):
         return reverse('project_update' , args=[self.object.project.id])  
