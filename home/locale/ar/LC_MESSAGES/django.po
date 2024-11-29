@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-29 23:19+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+#: .\home\models.py:16
+msgid "name"
+msgstr ""
+
+#: .\home\models.py:19
+msgid "Category"
+msgstr "الفئة"
+
+#: .\home\models.py:20
+msgid "Categorys"
+msgstr "الفئات"
+
+#: .\home\models.py:28
+msgid "title"
+msgstr "العنوان"
+
+#: .\home\models.py:29 .\home\models.py:48
+msgid "description"
+msgstr "الشرح"
+
+#: .\home\models.py:30
+msgid "created_at"
+msgstr "تاريخ الأنشاء"
+
+#: .\home\models.py:31
+msgid "update_at"
+msgstr "تاريخ التعديل"
+
+#: .\home\models.py:32
+msgid "status"
+msgstr "الحالة"
+
+#: .\home\models.py:33
+msgid "project_category"
+msgstr "مشروع_فئة"
+
+#: .\home\models.py:34
+msgid "project_user"
+msgstr "مشروع_مستخدم"
+
+#: .\home\models.py:38
+msgid "Project"
+msgstr "المشروع"
+
+#: .\home\models.py:39
+msgid "Projects"
+msgstr "المشاريخ"
+
+#: .\home\models.py:49
+msgid "is_completed"
+msgstr "مكتمل"
+
+#: .\home\models.py:50
+msgid "task_project"
+msgstr "مهمة_مشروع"
+
+#: .\home\models.py:54
+msgid "Task"
+msgstr "مهمة"
+
+#: .\home\models.py:55
+msgid "Tasks"
+msgstr "مهمات"
+
+#: .\home\templates\base.html:8
+msgid "Projects Managment"
+msgstr "ادارة المشاريع"
+
+#: .\home\templates\create.html:11
+msgid "New Project"
+msgstr "مشروع جديد"
+
+#: .\home\templates\create.html:18
+msgid "Create"
+msgstr "انشاء"
+
+#: .\home\templates\delete.html:9
+msgid "Alert"
+msgstr "تنبيه"
+
+#: .\home\templates\delete.html:13
+msgid "Are you sure to delete"
+msgstr "هل تريد حذف "
+
+#: .\home\templates\delete.html:15 .\home\templates\update.html:50
+msgid "Delete"
+msgstr "حذف"
+
+#: .\home\templates\index.html:10
+msgid "My Projects"
+msgstr "مشروعي"
+
+#: .\home\templates\index.html:13 .\home\templates\index.html:55
+msgid "New Projects"
+msgstr "مشروع جديد"
+
+#: .\home\templates\index.html:39
+msgid "Edit"
+msgstr "تعديل"
+
+#: .\home\templates\index.html:52
+msgid "there are no projects to show"
+msgstr "لا يوجد مشاريع للعرض"
+
+#: .\home\templates\index.html:68 .\home\templates\index.html:74
+msgid "Previous"
+msgstr "السابق"
+
+#: .\home\templates\index.html:81 .\home\templates\index.html:87
+msgid "Next"
+msgstr "التالي"
+
+#: .\home\templates\parts\header.html:5
+msgid "Projects Management"
+msgstr "ادارة المشاريع"
+
+#: .\home\templates\parts\header.html:12
+msgid "Home"
+msgstr "الرئيسية"
+
+#: .\home\templates\parts\header.html:31
+msgid "Logout"
+msgstr "تسجيل الخروج"
+
+#: .\home\templates\parts\header.html:38 .\home\templates\parts\header.html:39
+msgid "Search"
+msgstr "بحث"
+
+#: .\home\templates\parts\header.html:42
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: .\home\templates\parts\header.html:43
+msgid "Sing up"
+msgstr "انشاء حساب"
+
+#: .\home\templates\task.html:28
+msgid "New Task"
+msgstr "مهمة جديد"
+
+#: .\home\templates\task.html:29
+msgid "Add"
+msgstr "اضافة"
+
+#: .\home\templates\update.html:43
+msgid "Save"
+msgstr "حذف"
