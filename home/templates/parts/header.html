@@ -15,12 +15,32 @@
             <a class="nav-link" href="#">Link</a>
           </li>
         </ul>
-
-        <form method="GET" action="{% url 'index' %}" class="d-flex">
-          <input name='q' value="{{request.GET.q}}" class="form-control me-2" type="search" placeholder="{% trans "Search" %}" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">{% trans "Search" %}</button>
-        </form>
-
+        {% if user.is_authenticated %}
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{user.username}}
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item"><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
+                {% comment %} <li class="nav-item"><a class="dropdown-item" href="{% url 'logout' %}">logout</a></li> {% endcomment %}
+                <li>
+                  <form method="post" action="{% url 'logout' %}">
+                  {% csrf_token %}
+                  <button type="submit" class="dropdown-item">{% trans 'Logout' %}</button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form method="GET" action="{% url 'index' %}" class="d-flex">
+            <input name='q' value="{{request.GET.q}}" class="form-control me-2" type="search" placeholder="{% trans "Search" %}" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">{% trans "Search" %}</button>
+          </form>
+        {% else %}
+                <a class="btn btn-outline-light mx-2" href="{% url 'login' %}">{% trans "Login" %}</a>
+                <a class="btn btn-outline-light mx-2" href="{% url 'singup' %}">{% trans "Sing up" %}</a>
+        {% endif %}
       </div>
     </div>
   </nav>
